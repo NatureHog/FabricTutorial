@@ -1,6 +1,8 @@
 package com.naturehog.fabrictutorial;
 
 
+import com.naturehog.fabrictutorial.registry.ModItems;
+
 import net.fabricmc.api.ModInitializer;
 
 public class FabricTutorial implements ModInitializer {
@@ -9,6 +11,6 @@ public class FabricTutorial implements ModInitializer {
 
     @Override
     public void onInitialize() {
-
+        ModItems.registerItems();
     }
 }
